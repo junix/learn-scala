@@ -26,7 +26,7 @@ object Primes {
     3 #:: next(5)
   }
 
-  private def prime(i: Long) =
+  def prime(i: Long) =
     prime3.takeWhile(math.sqrt(i).>= _).forall {
       i % _ != 0
     }
